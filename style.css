@@ -1,0 +1,30 @@
+body {
+      position: relative; 
+      font-family: "Montserrat",sans-serif;
+  }
+
+ .navbar-nav{
+   margin-left: 75%;
+ }
+
+ #section1{
+     padding-top:280px;
+     padding-bottom:280px;
+ }
+ #section2{
+     padding-top:260px;
+     padding-bottom:260px;
+ }
+ #section3{
+     padding-top:260px;
+     padding-bottom:260px;
+ }
+ #section4{
+     padding-top:260px;
+     padding-bottom:260px;
+ }
+
+ #welcome{
+ 	text-align: center;
+
+ }
