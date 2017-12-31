@@ -12,11 +12,11 @@ body {
      padding-bottom:280px;
  }
  #section2{
-     padding-top:260px;
-     padding-bottom:260px;
+     padding-top:50px;
+     padding-bottom:111px;
  }
  #section3{
-     padding-top:260px;
+     padding-top:50px;
      padding-bottom:260px;
  }
  #section4{
@@ -28,3 +28,29 @@ body {
  	text-align: center;
 
  }
+
+ #about{
+ 	width: 50%;
+ 	text-align: left;
+ 	font-size: large;
+ 	padding-top: 60px;
+ }
+ #about_image{
+    background-image: url(./img/about.jpg);
+    width: 360px;
+    height: 360px;
+    background-size: contain;
+    margin-left: 10%;
+ }
+ .devicon-html5-plain,.devicon-css3-plain,.devicon-javascript-plain,.devicon-jquery-plain,.devicon-java-plain{
+ 	font-size: 7em;
+ }
+#skills {
+	margin: 50px auto;
+	width: 800px;
+	padding-left: 35px;
+}
+#tool{
+	text-align: center;
+	padding-top: 15px;
+}
