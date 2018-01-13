@@ -21,6 +21,14 @@ $(window).on('load',function(){
   });
 
 
+  $('td > i').hover(function(){
+  	 $(this).toggleClass('colored');
+  
+  })
+
+
+
+
 
 
 

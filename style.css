@@ -2,6 +2,9 @@ body {
       position: relative; 
       font-family: "Montserrat",sans-serif;
   }
+  a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+}
 
  .navbar-nav{
    margin-left: 75%;
@@ -28,7 +31,6 @@ body {
  	text-align: center;
 
  }
-
  #about{
  	width: 50%;
  	text-align: left;
@@ -42,15 +44,25 @@ body {
     background-size: contain;
     margin-left: 10%;
  }
- .devicon-html5-plain,.devicon-css3-plain,.devicon-javascript-plain,.devicon-jquery-plain,.devicon-java-plain{
+ .devicon-html5-plain,.devicon-css3-plain,.devicon-javascript-plain,.devicon-jquery-plain,.devicon-java-plain,.devicon-bootstrap-plain,
+ .devicon-mysql-plain,.devicon-oracle-original,.devicon-python-plain,.devicon-git-plain{
  	font-size: 7em;
  }
 #skills {
-	margin: 50px auto;
+	margin-top: 30px;
+	margin-left: 265px;
 	width: 800px;
-	padding-left: 35px;
+  padding-left: 35px;
+	
 }
 #tool{
 	text-align: center;
 	padding-top: 15px;
+}
+
+table{
+	text-align: center;
+}
+td{
+	padding: 5px 15px;
 }
