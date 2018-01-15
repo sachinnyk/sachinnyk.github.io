@@ -20,29 +20,9 @@ $(window).on('load',function(){
     offset: 50
   });
 
-
-<<<<<<< HEAD
   $('td > i').hover(function(){
   	 $(this).toggleClass('colored');
   
   })
-
-
-
-
-=======
-<<<<<<< Updated upstream
->>>>>>> working
-
-=======
-  $('td > i').hover(function(){
-  	 $(this).toggleClass('colored');
-  
-  })
-
-  
->>>>>>> Stashed changes
-
-
 
 });
