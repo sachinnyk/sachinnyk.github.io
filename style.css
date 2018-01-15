@@ -2,9 +2,19 @@ body {
       position: relative; 
       font-family: "Montserrat",sans-serif;
   }
+<<<<<<< HEAD
   a, a:visited, a:focus, a:active, a:hover{
     outline:0 none !important;
 }
+=======
+<<<<<<< Updated upstream
+=======
+  a, a:visited, a:focus, a:active, a:hover{
+    outline:0 none !important;
+    color: inherit;
+}
+>>>>>>> Stashed changes
+>>>>>>> working
 
  .navbar-nav{
    margin-left: 75%;
@@ -23,8 +33,8 @@ body {
      padding-bottom:260px;
  }
  #section4{
-     padding-top:260px;
-     padding-bottom:260px;
+     padding-top:50px;
+     padding-bottom:275px;
  }
 
  #welcome{
@@ -58,11 +68,31 @@ body {
 #tool{
 	text-align: center;
 	padding-top: 15px;
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+}
+=======
+>>>>>>> working
 }
 
 table{
 	text-align: center;
 }
 td{
+<<<<<<< HEAD
 	padding: 5px 15px;
 }
+=======
+	padding: 10px 15px;
+}
+#follow_me{
+  width: 800px;
+  margin-left: 275px;
+  margin-top: 100px;
+}
+.hoverLink{
+  color: red;
+}
+>>>>>>> Stashed changes
+>>>>>>> working

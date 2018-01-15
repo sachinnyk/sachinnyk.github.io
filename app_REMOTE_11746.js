@@ -21,18 +21,7 @@ $(window).on('load',function(){
   });
 
 
-<<<<<<< HEAD
-  $('td > i').hover(function(){
-  	 $(this).toggleClass('colored');
-  
-  })
-
-
-
-
-=======
 <<<<<<< Updated upstream
->>>>>>> working
 
 =======
   $('td > i').hover(function(){

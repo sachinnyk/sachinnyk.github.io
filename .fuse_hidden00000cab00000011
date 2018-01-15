@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -55,39 +56,6 @@
   <h1 style="text-align: center;">TOOLS</h1>
   <p style="text-align: center;"><b>Languages, frameworks and tools I have experience with and am comfortable using.</b></p>
   <div id="skills">
-  <table>
-  	<tr>
-  		<td><i class="devicon-html5-plain"></i></td>
-  		<td><i class="devicon-css3-plain"></i></td>
-  		<td><i class="devicon-bootstrap-plain"></i></td>
-  		<td><i class="devicon-javascript-plain"></td>
-  		<td><i class="devicon-jquery-plain"></i></td>
-  	</tr>
-  	<tr>
-  		<td><span>HTML5</span></td>
-  		<td><span>CSS3</span></td>
-  		<td><span>Bootstrap</span></td>
-  		<td><span>Javascript</span></td>
-  		<td><span>jQuery</span></td>
-  		
-  	</tr>
-  	<tr>
-  	    <td><i class="devicon-java-plain"></i></td>
-  		<td><i class="devicon-mysql-plain"></i></td>
-  		<td><i class="devicon-oracle-original"></i></td>
-  		<td><i class="devicon-python-plain"></i></td>
-  		<td><i class="devicon-git-plain"></i></td>
-  	</tr>
-  	<tr>
-  		<td><span>Java</span></td>
-  		<td><span>MySQL</span></td>
-  		<td><span>Oracle DB</span></td>
-  		<td><span>Python</span></td>
-  		<td><span>Git</span></td>
-  	</tr>
-
-  </table>
-  <!--
   <div class="row">
   	<div class="col"><i class="devicon-html5-plain"></i></div>
   	<div class="col"><i class="devicon-css3-plain"></i></div>
@@ -102,7 +70,6 @@
   	<div class="col"><span>jQuery</span></div>
   	<div class="col"><span>Java</span></div>
   </div>
-  -->
   </div>
 </div>
 <div id="section4" class="container-fluid">

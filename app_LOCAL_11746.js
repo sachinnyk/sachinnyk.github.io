@@ -21,7 +21,6 @@ $(window).on('load',function(){
   });
 
 
-<<<<<<< HEAD
   $('td > i').hover(function(){
   	 $(this).toggleClass('colored');
   
@@ -30,18 +29,7 @@ $(window).on('load',function(){
 
 
 
-=======
-<<<<<<< Updated upstream
->>>>>>> working
 
-=======
-  $('td > i').hover(function(){
-  	 $(this).toggleClass('colored');
-  
-  })
-
-  
->>>>>>> Stashed changes
 
 
 
