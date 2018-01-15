@@ -21,7 +21,16 @@ $(window).on('load',function(){
   });
 
 
+<<<<<<< Updated upstream
 
+=======
+  $('td > i').hover(function(){
+  	 $(this).toggleClass('colored');
+  
+  })
+
+  
+>>>>>>> Stashed changes
 
 
 
