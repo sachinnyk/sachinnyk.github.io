@@ -25,4 +25,9 @@ $(window).on('load',function(){
   
   })
 
+  $('.col').find("i").hover(function(){
+  	  console.log("HI");
+  	$(this).toggleClass('colored');
+  })
+
 });
