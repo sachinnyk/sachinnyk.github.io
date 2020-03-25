@@ -123,7 +123,11 @@
   </div>
 </div>
 <div class="card-footer text-muted" style="text-align: center; background-color: #343A40;">
-    <span> Designed by Sachin Nayak  - 2019  ©    <a href="mailto:sachinnyk@gmail.com"><i class="fas fa-envelope"></i></a></span>
+    <span> Designed by Sachin Nayak  - <span id="year"></span>  ©    <a href="mailto:sachinnyk@gmail.com"><i class="fas fa-envelope"></i></a></span>
 </div>
+<script type="text/javascript">
+  var date = new Date();
+  document.getElementById('year').innerHTML = date.getFullYear();
+ </script>
 </body>
 </html>
