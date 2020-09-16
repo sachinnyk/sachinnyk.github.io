@@ -17,6 +17,10 @@ a:hover {
 #mainDiv {
   width: 100%;
 }
+
+#closeBtn {
+  display: none;
+}
 .navbar-nav {
   justify-content: flex-end;
   width: 100%;
@@ -45,8 +49,14 @@ a:hover {
   text-align: center;
   row-gap: 10px;
 }
-
-#section1 {
+#section1,
+#section2 {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* #section1 {
   padding-top: 17em;
   padding-bottom: 16em;
   height: 100vh;
@@ -55,9 +65,9 @@ a:hover {
   padding-top: 7em;
   padding-bottom: 5em;
   height: 100vh;
-}
+} */
 #section3 {
-  padding-top: 7em;
+  padding-top: 5em;
   padding-bottom: 6em;
   height: 100vh;
 }
@@ -86,7 +96,7 @@ a:hover {
   margin-left: 10%;
 }
 .grid-icon > div > [class^="devicon-"] {
-  font-size: 7em;
+  font-size: 6em;
 }
 #skills {
   margin-top: 30px;
@@ -124,8 +134,31 @@ td {
   .icon {
     justify-content: flex-end;
   }
-  .navbar-nav {
-    display: none;
+  #closeBtn {
+    display: unset;
+  }
+
+  #mainDiv .navbar-nav {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: unset;
+    transform: translate(-150px, 0px);
+    justify-content: flex-start;
+    transition: all 0.3s;
+    transition-timing-function: ease-in;
+    background-color: #23292f;
+  }
+  .navbar-nav #closeBtn {
+    font-size: 3em;
+    margin-left: 100px;
+    padding-right: 10px;
+  }
+  .nav-item > a {
+    color: white !important;
+    padding-left: 10px !important;
   }
 
   #about {
@@ -141,10 +174,14 @@ td {
   .about_container {
     justify-content: center;
   }
+  .tools_container {
+    margin-top: 50px;
+  }
   .grid-icon {
     margin-left: unset;
     margin-right: unset;
     grid-template-columns: 90px 90px 90px 90px;
+    row-gap: 20px;
   }
   .grid-icon > div > [class^="devicon-"] {
     font-size: 4em;
