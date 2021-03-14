@@ -56,7 +56,8 @@ a:hover {
   height: 100vh;
 }
 #section1 {
-  align-content: center;
+  align-items: end;
+  grid-template-rows: 1.5fr 1fr;
 }
 
 #section2 {
@@ -86,6 +87,26 @@ a:hover {
 
 #welcome {
   text-align: center;
+}
+
+.down-arrow{
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+  animation: bounce 1s infinite;
+  animation-fill-mode: both;
+  margin-bottom: 2em
+}
+
+@keyframes bounce{
+  0%,100% {
+    transform: translateY(0px);
+    animation-timing-function:cubic-bezier(.8,0,1,1);
+  }
+  50%{
+    transform: translateY(15px);
+    animation-timing-function: cubic-bezier(0,0,.2,1);
+  }
 }
 #about {
   width: 50%;
@@ -167,12 +188,13 @@ td {
   border: 1px solid red;
   border-radius: 5%;
   background-color: #d3e0ea;
+  grid-template-rows: 8em 6em 13em 0em;
 }
 
 .project-card .card-title {
   font-weight: bolder;
   font-size: 1.2rem;
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 .project-card .card-item-footer {
@@ -187,9 +209,15 @@ td {
 }
 .project-card .card-desc {
   padding: 1em;
+  display: grid;
+  justify-content: start;
 }
 
-@media only screen and (min-width: 1000px) {
+.card-stack {
+  font-size: 0.8em;
+}
+
+@media only screen and (min-width: 1200px) {
   .icon {
     display: none;
   }
@@ -200,6 +228,7 @@ td {
   }
   .icon {
     justify-content: flex-end;
+    color:rgba(255,255,255,.5);
   }
   #closeBtn {
     display: unset;
@@ -224,7 +253,7 @@ td {
     padding-right: 10px;
   }
   .nav-item > a {
-    color: white !important;
+    color: rgba(255,255,255,.5) !important;
     padding-left: 10px !important;
   }
 
@@ -269,5 +298,6 @@ td {
   .project-card {
     width: 18em;
     height: 25em;
+    grid-template-rows: 6em 2em 14em 0em;
   }
 }
