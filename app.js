@@ -10,7 +10,7 @@ $(window).on("load", function () {
       if (target.length) {
         $("html, body").animate(
           {
-            scrollTop: target.offset().top - 50,
+            scrollTop: target.offset().top - 40,
           },
           1000
         );

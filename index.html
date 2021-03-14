@@ -52,28 +52,32 @@
           <a class="nav-link" href="#section3">TOOLS</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section4">CONTACT</a>
+          <a class="nav-link" href="#section4">PROJECTS</a>
         </li>
       </ul>
     </nav>
 
     <div id="section1" class="container-fluid bg-success">
       <div id="welcome">
-        <h1><b>Welcome to my Digital Profile!</b></h1>
-        <p style="font-size: 30px; color: white">I'm Sachin Nayak.</p>
+        <h1><b>Hey There 👋!</b></h1>
+        <p style="font-size: 2.5em; color: white">I'm Sachin Nayak.</p>
       </div>
     </div>
     <div id="section2" class="container-fluid bg-warning">
       <h1 style="text-align: center">ABOUT ME</h1>
       <div class="row about_container" style="padding: 20px">
-        <div class=".col-lg-6" id="about">
+        <article id="about">
           <p>
-            Hey there! I'm Sachin Nayak. I work as IT Analyst at Tata Consultancy Services in Pune.I
-            also hold a Bachelors Degree in Information Science.Outside of my work ,I'm interested
-            to learn new language and framework to work on personal projects.
+            Hey , My name is Sachin Nayak. Currently working as IT Analyst at Tata Consultancy
+            Services in Pune.
           </p>
-        </div>
-        <div class=".col-lg-6" id="about_image"></div>
+          <p>My fields of interest are Javascript , Web Development and AWS.</p>
+          <p>
+            I currently have 5+ years of experience in developing , maintaining applications using
+            web techologies.
+          </p>
+        </article>
+        <div id="about_image"></div>
       </div>
     </div>
     <div id="section3" class="container-fluid bg-secondary">
@@ -162,44 +166,57 @@
       </div>
     </div>
     <div id="section4" class="container-fluid">
-      <h1 style="text-align: center">FOLLOW ME</h1>
-      <div class="row" id="follow_me">
-        <!--  <div class="col">
-          <a href="https://www.facebook.com/sachinnyk" target="_blank"
-            ><i class="fab fa-facebook-square fa-5x"></i
-          ></a>
+      <h1 style="text-align: center">PROJECTS</h1>
+      <div class="card_list">
+        <div class="project-card">
+          <div class="card-title">Covid 19 Tracker</div>
+          <div class="card-stack">Tech Used - React,Chartjs</div>
+          <div class="card-desc">A website which dispays Covid cases in India.</div>
+          <div class="card-item-footer">
+            <a href="https://github.com/sachinnyk/covid19-tracker"
+              ><i class="fab fa-github fa-lg"></i> Repo Link</a
+            >
+          </div>
         </div>
-        <div class="col">
-          <a href="https://www.instagram.com/sachin.nyk" target="_blank"
-            ><i class="fab fa-instagram fa-5x"></i
-          ></a>
-        </div> -->
-        <div class="col">
+        <div class="project-card">
+          <div class="card-title">Braking Bad App</div>
+          <div class="card-stack">Tech Used - React</div>
+          <div class="card-desc">App to display characters from Breaking Bad TV Series</div>
+          <div class="card-item-footer">
+            <a href="https://github.com/sachinnyk/breaking-bad-react-app"
+              ><i class="fab fa-github fa-lg"></i> Repo Link</a
+            >
+          </div>
+        </div>
+        <div class="project-card"></div>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <div class="contact-footer">
+        <div>
           <a href="https://www.twitter.com/sachin_nyk" target="_blank"
-            ><i class="fab fa-twitter fa-5x"></i
+            ><i class="fab fa-twitter fa-lg"></i
           ></a>
         </div>
-        <div class="col">
+        <div>
           <a href="https://www.linkedin.com/in/sachin-nayak-b900979a/" target="_blank"
-            ><i class="fab fa-linkedin fa-5x"></i
+            ><i class="fab fa-linkedin fa-lg"></i
           ></a>
         </div>
-        <div class="col">
+        <div>
           <a href="https://www.github.com/sachinnyk" target="_blank">
-            <i class="fab fa-github fa-5x"></i
+            <i class="fab fa-github fa-lg"></i
           ></a>
         </div>
       </div>
-    </div>
-    <div class="card-footer text-muted" style="text-align: center; background-color: #343a40">
-      <span>
-        Designed by Sachin Nayak - <span id="year"></span> ©
+      <span style="margin-bottom: 1rem">
+        Sachin Nayak - <span id="year"></span> ©
         <a href="mailto:sachinnyk@gmail.com"><i class="fas fa-envelope"></i></a>
       </span>
-    </div>
-    <script type="text/javascript">
-      var date = new Date();
-      document.getElementById("year").innerHTML = date.getFullYear();
-    </script>
+      <script type="text/javascript">
+        var date = new Date();
+        document.getElementById("year").innerHTML = date.getFullYear();
+      </script>
+    </footer>
   </body>
 </html>
