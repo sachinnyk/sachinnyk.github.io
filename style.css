@@ -288,7 +288,6 @@ td {
   #follow_me {
     margin: unset;
   }
-
   #section2,
   #section3 {
     height: 90vh;
@@ -301,7 +300,11 @@ td {
     align-content: start;
     grid-template-rows: 5em 5em 1fr;
   }
-
+  #section3 {
+    display: grid;
+    align-content: start;
+    grid-template-rows: 5em 5em 1fr;
+  }
   #section4 {
     height: 100%;
     padding-bottom: 5em;
