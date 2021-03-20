@@ -57,7 +57,7 @@ a:hover {
 }
 #section1 {
   align-items: end;
-  grid-template-rows: 1.5fr 1fr;
+  grid-template-rows: 1.3fr 1fr;
 }
 
 #section2 {
@@ -89,23 +89,24 @@ a:hover {
   text-align: center;
 }
 
-.down-arrow{
+.down-arrow {
   display: grid;
   justify-content: center;
   align-items: baseline;
   animation: bounce 1s infinite;
   animation-fill-mode: both;
-  margin-bottom: 2em
+  margin-bottom: 2em;
 }
 
-@keyframes bounce{
-  0%,100% {
+@keyframes bounce {
+  0%,
+  100% {
     transform: translateY(0px);
-    animation-timing-function:cubic-bezier(.8,0,1,1);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
-  50%{
+  50% {
     transform: translateY(15px);
-    animation-timing-function: cubic-bezier(0,0,.2,1);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 #about {
@@ -184,11 +185,11 @@ td {
   display: grid;
   justify-items: center;
   width: 20em;
-  height: 30em;
+  height: 25em;
   border: 1px solid red;
   border-radius: 5%;
   background-color: #d3e0ea;
-  grid-template-rows: 8em 6em 13em 0em;
+  grid-template-rows: 6em 6em 10em 0em;
 }
 
 .project-card .card-title {
@@ -228,7 +229,7 @@ td {
   }
   .icon {
     justify-content: flex-end;
-    color:rgba(255,255,255,.5);
+    color: rgba(255, 255, 255, 0.5);
   }
   #closeBtn {
     display: unset;
@@ -253,7 +254,7 @@ td {
     padding-right: 10px;
   }
   .nav-item > a {
-    color: rgba(255,255,255,.5) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     padding-left: 10px !important;
   }
 
@@ -266,9 +267,11 @@ td {
     width: 225px;
     height: 225px;
     margin-left: unset;
+    margin-top: 2em;
   }
   .about_container {
     justify-content: center;
+    margin-top: 2em;
   }
   .tools_container {
     margin-top: 50px;
@@ -285,6 +288,20 @@ td {
   #follow_me {
     margin: unset;
   }
+  #section1,
+  #section2,
+  #section3 {
+    height: 90vh;
+  }
+  #section2 {
+    align-content: start;
+  }
+  #section3 {
+    display: grid;
+    align-content: start;
+    grid-template-rows: 5em 5em 1fr;
+  }
+
   #section4 {
     height: 100%;
     padding-bottom: 5em;
@@ -293,7 +310,7 @@ td {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
-    grid-row-gap: 1em;
+    grid-row-gap: 2em;
   }
   .project-card {
     width: 18em;
