@@ -52,9 +52,16 @@ a:hover {
 #section1,
 #section2 {
   display: grid;
-  align-content: center;
   justify-content: center;
   height: 100vh;
+}
+#section1 {
+  align-items: end;
+  grid-template-rows: 1.3fr 1fr;
+}
+
+#section2 {
+  padding-top: 2em;
 }
 /* #section1 {
   padding-top: 17em;
@@ -67,18 +74,40 @@ a:hover {
   height: 100vh;
 } */
 #section3 {
-  padding-top: 5em;
+  padding-top: 3em;
   padding-bottom: 6em;
   height: 100vh;
 }
 #section4 {
-  padding-top: 7em;
+  padding-top: 3em;
   padding-bottom: 12em;
-  height: 90vh;
+  height: 100vh;
+  background-color: #f5f4f4;
 }
 
 #welcome {
   text-align: center;
+}
+
+.down-arrow {
+  display: grid;
+  justify-content: center;
+  align-items: baseline;
+  animation: bounce 1s infinite;
+  animation-fill-mode: both;
+  margin-bottom: 2em;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(15px);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 #about {
   width: 50%;
@@ -88,12 +117,13 @@ a:hover {
   padding-left: 5em;
 }
 #about_image {
-  background-image: url(./img/about.jpg);
+  background-image: url(./img/about3.jpg);
   background-repeat: no-repeat;
-  width: 360px;
-  height: 360px;
-  background-size: contain;
+  width: 20em;
+  height: 20em;
+  background-size: cover;
   margin-left: 10%;
+  border-radius: 5%;
 }
 .grid-icon > div > [class^="devicon-"] {
   font-size: 6em;
@@ -125,14 +155,81 @@ td {
   align-items: center;
 }
 
+.contact-footer {
+  display: grid;
+  width: 20rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.card-footer {
+  text-align: center;
+  background-color: #343a40;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+.contact-footer a:hover {
+  color: turquoise;
+}
+
+.card_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.project-card {
+  display: grid;
+  justify-items: center;
+  width: 20em;
+  height: 25em;
+  border: 1px solid red;
+  border-radius: 5%;
+  background-color: #d3e0ea;
+  grid-template-rows: 6em 6em 10em 0em;
+}
+
+.project-card .card-title {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin-top: 3em;
+}
+
+.project-card .card-item-footer {
+  border-top: 1px solid grey;
+  width: 100%;
+  padding: 0.5em;
+  height: 0em;
+  text-align: center;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+.project-card .card-desc {
+  padding: 1em;
+  display: grid;
+  justify-content: start;
+}
+
+.card-stack {
+  font-size: 0.8em;
+}
+
 @media only screen and (min-width: 1200px) {
   .icon {
     display: none;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
   .icon {
     justify-content: flex-end;
+    color: rgba(255, 255, 255, 0.5);
   }
   #closeBtn {
     display: unset;
@@ -157,7 +254,7 @@ td {
     padding-right: 10px;
   }
   .nav-item > a {
-    color: white !important;
+    color: rgba(255, 255, 255, 0.5) !important;
     padding-left: 10px !important;
   }
 
@@ -165,14 +262,16 @@ td {
     width: unset;
     padding-top: unset;
     padding-left: unset;
-    text-align: justify;
   }
   #about_image {
     width: 225px;
     height: 225px;
+    margin-left: unset;
+    margin-top: 2em;
   }
   .about_container {
     justify-content: center;
+    margin-top: 2em;
   }
   .tools_container {
     margin-top: 50px;
@@ -188,5 +287,37 @@ td {
   }
   #follow_me {
     margin: unset;
+  }
+  #section2,
+  #section3 {
+    height: 90vh;
+  }
+  #section2 {
+    align-content: start;
+  }
+  #section3 {
+    display: grid;
+    align-content: start;
+    grid-template-rows: 5em 5em 1fr;
+  }
+  #section3 {
+    display: grid;
+    align-content: start;
+    grid-template-rows: 5em 5em 1fr;
+  }
+  #section4 {
+    height: 100%;
+    padding-bottom: 5em;
+  }
+  .card_list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-row-gap: 2em;
+  }
+  .project-card {
+    width: 18em;
+    height: 25em;
+    grid-template-rows: 6em 2em 14em 0em;
   }
 }
